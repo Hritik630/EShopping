@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+
+	 
+function val()
+{
+	var name=/^[a-zA-Z]+$/;
+ var nm=document.getElementById('nm').value;
+ var pwd=document.getElementById('pwd').value;
+ if(nm=="")
+	 {
+	 alert("please enter name");
+	 }
+	 else (pwd.length<8)
+		 {
+		 alert("password must contain at least 8 digits");
+		 }
+}
+
+function check()
+{
+	var pwd=document.getElementById('pwd');
+	if(pwd.type=="password")
+	{
+		pwd.type="text";
+	}
+	else
+	{
+		pwd.type="password";
+	}
+
+}
+	
+</script>
+</head>
+<body>
+<form action="Alogin">
+<pre>
+
+ID<input type="text" name="id" placeholder="please enter id" autofocus required />
+PASSWORD<input type="password" name="pwd" /><input type="checkbox" onclick="check()">hide/show
+<input type="submit" value="Login" name="" onclick="val()">
+</pre>
+</form>
+<img src="adminpage.jpg" height=50% and width=100%></img>
+</body>
+</html>
